@@ -1,3 +1,5 @@
+<!--***************************************************************************************************************************-->
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -50,8 +52,19 @@
              <input type="text" name="qualification" id="qualification" placeholder="Enter Qualification" required />
             </div>          
         </div>
-
         <div class="column"> 
+          <div class="input-box">
+          <label for="guardian name" class="required">Guardian Name</label>
+          <input type="text" name="guardian name" id="guardian name" autocomplete="off" placeholder="Enter full name" required   aria-required="true"/>
+          </div>
+         <div class="input-box">
+            <label>Guardian Phone No.</label>
+            <input type="number" name="phone" id="phone" placeholder="Enter phone number" required />
+        </div> 
+    </div> 
+       <div class="row">
+        <div class="column">
+         
           <div class="select-container">
             <div class="input-box">
              <label>Marital status</label>
@@ -67,7 +80,7 @@
             </div>
           </div>
       
-        <div class="select-container"  style="margin-right: 0px;"> 
+        <div class="select-container" > 
             <div class="input-box">
             <label>Gender</label>               
             <select name="gender" id="gender">
@@ -79,25 +92,28 @@
             </select>
           </div>
         </div>
+   
+
+        <div class="select-container"  style="margin-right: 0px;"> 
+        <div class="input-box">
+         <label for="guardian relation" class="required">Relation</label >  
+         <select name="guardian relation" id="guardian relation" required aria-required="true">
+          <option value="" disabled selected hidden>Guardian Relation</option>
+          <option  value="father">Father</option>
+          <option  value="mother">Mother</option>
+          <option  value="husband"> Husband</option>
+          <option  value="wife" >Wife</option>
+          <option  value="uncle">Uncle</option>
+          <option  value="aunt">Aunt</option>
+          <option   value="brother">Brother</option>
+          <option    value="sister">Sister</option>
+          <option  value="other">Other</option>
+
+        </select>
+          </div>
+        </div>
+     </div> 
     </div>
-
-      <div class="column"> 
-        <div class="input-box">
-        <label>Guardian Name</label>
-        <input type="text" name="name" id=" name" autocomplete="off" placeholder="Enter full name" required />
-        </div>
-       
-        <div class="input-box">
-         <label>Guardian Relation</label>  
-         <input type="text"  name="id" id="name" autocomplete="off" placeholder="Enter relation" required />
-        </div>
-
-        <div class="input-box">
-            <label>Guardian Phone No.</label>
-            <input type="number" name="phone" id="phone" placeholder="Enter phone number" required />
-        </div> 
-    </div> 
- </div>  
       <div class="input-box address">
                 <label>Address</label>
                 <div class="column" style="margin-bottom: 10px;">
@@ -139,10 +155,11 @@
                    </div>
                   
               </div>
+              <div class="form-row">
               <div class="form-column">
                 <div class="form-group">
                   <label for="jobRole">Job Role</label>
-                    <select id="jobRole" name="jobRole" required>
+                    <select id="jobRole" name="jobRole" >
                       <option value="">Select Job Role</option>
                       <option value="Charted Accountant">Charted Accountant</option>
                       <option value="Senior Accountant">Senior Accountant</option>
@@ -173,9 +190,18 @@
                       <option value="Networking Faculty">Networking Faculty</option>
 
                   </select>
-                </div>        
-             
-           
+                </div> 
+              </div>
+                  <!-- Left Column -->
+                   <div class="form-column">
+                      <div class="form-group">       
+                        <label>Passkey</label>
+                    
+                           
+                        <input type="password" name="passkey" id="passkey" placeholder="Enter Default Passkey" required />
+                      </div>
+                  </div>
+              </div>
                        <script>
                             function previewPhoto() {
                             const photoInput = document.getElementById('photo');
